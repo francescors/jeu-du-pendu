@@ -22,7 +22,7 @@ dont le dictionnaire est extrait du roman *Les Misérables* de Victor Hugo.
 1. Clonez le repository
 
 ```bash
-git clone [URL_DU_REPO]
+git clone git clone https://github.com/francescors/jeu-du-pendu.git
 ```
 
 2. Lancez le serveur
