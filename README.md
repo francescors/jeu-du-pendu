@@ -21,15 +21,19 @@ dont le dictionnaire est extrait du roman *Les Misérables* de Victor Hugo.
 
 1. Clonez le repository
 
+```bash
 git clone [URL_DU_REPO]
+```
 
 2. Lancez le serveur
-
+```bash
 node index.js
+```
 
 3. Ouvrez votre navigateur à l'adresse
-
+```bash
 http://localhost:8080
+```
 
 ## Comment jouer
 
