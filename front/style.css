@@ -1,0 +1,155 @@
+.notDisplayed {
+  display: none;
+}
+
+html, body {
+    margin: 0;
+    height: 50vh;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  text-align: center;
+  background: skyblue;
+  font-family: Arial;
+}
+
+h1 {
+  text-align: center;
+  background: lightblue;
+  font-family: Chalkduster;
+}
+
+#boutonJouer {
+  cursor: pointer;
+  position: fixed;
+  font-size: 24px; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: mediumslateblue;
+  border-radius: 8px;
+  border: 1px solid black;
+  padding: 15px 20px; 
+  margin-bottom: 100px;
+}
+
+#boutonJouer:hover {
+  background-color: turquoise;
+}
+
+#regles {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: lightgray;
+  padding: 10px;
+  font-size: 18px;
+  text-align: center;
+  font-family: Helvetica;
+}
+
+#niveauDifficulte {
+  max-width: 150px;
+  margin: 0 auto;
+  position: fixed; 
+  top: 65%; 
+  left: 50%; 
+  transform: translateX(-50%); 
+}
+
+#grille {
+  background: linear-gradient(skyblue, lightblue, skyblue); 
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+}
+
+#pendu {
+  grid-column: 1;
+  font-size: 1.5vw;
+}
+
+#mot {
+  grid-column: 2;
+}
+
+#espaceMot {
+  margin-top: 5vw;
+  font-size: 2vw;
+}
+
+#imagePendu {
+  max-width: 100%;
+  height: auto;
+}
+
+input[type="text"] {
+  width: 100%;
+  max-width: 50px;
+}
+
+#espaceLettre {
+  margin-top: 5vw;
+  font-size: 1.5vw;
+}
+
+#boutonTester:hover {
+  cursor: pointer;
+  color: white;
+  background-color: black;
+}
+
+#lettresAlphabet {
+  grid-column: 3;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-gap: 5px;
+}
+
+.lettre {
+  cursor: pointer;
+  font-weight: bold;
+  background-color: lightgreen;
+  width: 3vw;
+  height: 3vw;
+  border-radius: 1vw;
+}
+
+.lettre.correcte {
+  background-color: white;
+}
+
+.lettre.incorrecte{
+  background-color: red;
+}
+
+#resultat {
+  position: absolute;
+  font-family: Chalkduster;
+  font-size: 40px;
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+#boutonRejouer {
+  cursor: pointer;
+  position: absolute;
+  font-family: Arial;
+  font-size: 28px;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  background-color: mediumblue;
+  padding: 12px 20px;
+  border-radius: 15px;
+}
+
+#boutonRejouer:hover {
+  background-color: royalblue;
+}

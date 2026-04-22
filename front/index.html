@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Jeu du pendu</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+    </head>
+
+    <body>
+        <h1>Le jeu du Pendu</h1>
+
+	    <div>
+		    <button id="boutonJouer">JOUER</button>
+	    </div>
+
+        <select id="niveauDifficulte">
+            <option value="facile">Facile</option>
+            <option value="moyen">Moyen</option>
+            <option value="difficile">Difficile</option>
+            <option value="impossible">Impossible</option>
+        </select>
+
+        <div id="regles">
+            Règles du jeu: 
+            Jeu du pendu classique, vous avez 10 tentatives d'erreurs.
+            <br> Pour tester une lettre vous pouvez cliquer sur l'un des boutons que vous trouverez à droite ou écrire directement la lettre dans l'espace dédié et la tester.
+            <br>Vous pouvez choisir un niveau de difficulté et ensuite commencer une partie en cliquant sur "JOUER"
+        </div>
+
+
+        <div class="notDisplayed">
+            <div id="grille"> 
+
+                <div id="pendu">
+                    <p>Niveau de difficulté : <span id="niveau"></span> </p> 
+                    <p>Nombres d'erreurs : <span id="nombreErreurs"> 0 </span> </p> 
+                    <img id="imagePendu" src="images/pendu0.png" alt="image du Pendu" />
+                </div>
+
+                <main id="mot">
+                    <div id='espaceMot'>
+                        <p id="motHTML">Recherche d'un mot, patientez...</p>
+                    </div>
+            
+                    <div id='espaceLettre'>
+                        <label>Entrer une lettre :</label>
+                        <input type="text" autocomplete="off" placeholder="a, b, c, ..." />
+                        <button id='boutonTester'>TESTER</button>
+                    </div>
+
+                    <div id="resultatDiv">
+                        <p id="resultat"></p>
+                        <button id="boutonRejouer" class="notDisplayed">Rejouer</button>
+                    </div>
+                </main>
+
+                <div id="lettresAlphabet">
+                    <button class="lettre" id="a">A</button>
+                    <button class="lettre" id="b">B</button>
+                    <button class="lettre" id="c">C</button>
+                    <button class="lettre" id="d">D</button>
+                    <button class="lettre" id="e">E</button>
+                    <button class="lettre" id="f">F</button>
+                    <button class="lettre" id="g">G</button>
+                    <button class="lettre" id="h">H</button>
+                    <button class="lettre" id="i">I</button>
+                    <button class="lettre" id="j">J</button>
+                    <button class="lettre" id="k">K</button>
+                    <button class="lettre" id="l">L</button>
+                    <button class="lettre" id="m">M</button>
+                    <button class="lettre" id="n">N</button>
+                    <button class="lettre" id="o">O</button>
+                    <button class="lettre" id="p">P</button>
+                    <button class="lettre" id="q">Q</button>
+                    <button class="lettre" id="r">R</button>
+                    <button class="lettre" id="s">S</button>
+                    <button class="lettre" id="t">T</button>
+                    <button class="lettre" id="u">U</button>
+                    <button class="lettre" id="v">V</button>
+                    <button class="lettre" id="w">W</button>
+                    <button class="lettre" id="x">X</button>
+                    <button class="lettre" id="y">Y</button>
+                    <button class="lettre" id="z">Z</button>
+                </div>
+            </div>    
+        </div> 
+        <script type="application/javascript" src="script.js" defer></script>
+    </body>
+</html>
